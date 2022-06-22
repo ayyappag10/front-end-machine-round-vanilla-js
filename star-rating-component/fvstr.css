@@ -1,0 +1,18 @@
+.star-cont{
+    position: relative;
+    display: flex;
+    width: 150px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.star{
+width: 20px;
+height: 20px;
+border: solid orange 2px ;
+border-radius: 12px;
+}
+
+.star-highlighted{
+
+    background-color: orange;
+}

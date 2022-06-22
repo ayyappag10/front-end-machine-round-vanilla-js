@@ -1,0 +1,49 @@
+
+.carousel{
+height: 800px;
+width: 100%;
+position: relative;
+}
+.carousel-photo{
+  position: absolute;
+  display: none;
+  top: 10px;
+  height: 80%;
+  width: 100%;
+object-fit: cover;
+box-sizing: border-box;
+padding: 10%;
+
+}
+.carousel-photo.carousel-photo-current{
+display: block;
+transition: transform .5s ease;
+z-index: 500;
+}
+
+.carousel-photo-next{
+display: block;
+transform: translate(100%);
+transition: transform .5s ease;
+z-index: 300
+
+}
+.carousel-photo-prev{
+display: block;
+transform: translate(-100% );
+transition: transform .5s ease;
+z-index: 200;
+}
+#carousel-button-prev{
+top:50%;
+
+position: absolute;
+left: 10px;
+z-index: 1000;
+}
+#carousel-button-next{
+top:50%;
+z-index: 1001;
+position: absolute;
+right: 10px;
+}
